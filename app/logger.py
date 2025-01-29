@@ -13,11 +13,9 @@ class Logger:
 
     def __init__(self) -> None:
         if self._logger is None:
-            # Создание логгера
             self._logger = logging.getLogger('app_logger')
             self._logger.setLevel(logging.DEBUG)
 
-            # Консольный обработчик
             console_handler = logging.StreamHandler()
             console_handler.setLevel(logging.DEBUG)
 
